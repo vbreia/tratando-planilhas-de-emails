@@ -2,16 +2,21 @@
 
 Este repositório contém um conjunto de scripts para tratar planilhas de emails. O objetivo é facilitar a manipulação e processamento de emails que esstejam em algum tipo de banco com dados além desses emails e retorna-los de forma organizada, separando com vírgula e quebra de linha. 
 
-O script `extract-email.py` vai filtrar todos os emails detectados no arquivo/texto e retorna-los os separando por vírgula e quebrando uma linha.
+- O script [`extract-email.py`](extract-email.py) vai filtrar todos os emails detectados no arquivo/texto e retorna-los os separando por vírgula e quebrando uma linha.
+  
+- O script [`delete-repeated-emails.py`](delete-repeated-emails.py) vai remover todos os emails repetidos da sua lista de e-mails.
 
-O script `convert-csv.py` vai converter o arquivo `.txt` gerado pelo script anterior em um arquivo `.csv`
+- O script [`convert-csv.py`](convert-csv.py) vai converter o arquivo `.txt` gerado pelo script anterior em um arquivo `.csv`
+
+- O script [`split-into-x-emails.py`](split-into-x-emails.py) vai ler o arquivo txt com a lista de emails já organizada e dividir em vários arquivos de acordo com a sua necessidade de números de e-mails.
+  - Por exemplo: a lista tem 1000 e-mails e você precisa de arquivos que contenham apenas 100 e-mails. Então você consegue criar 10 arquivos com 100 e-mails.
 
 ## Funcionalidades
 
 - Extração de endereços de email a partir de planilhas
 - Remoção de emails duplicados
 - Limpeza e normalização de endereços de email
-- Análise estatística dos dados de email
+- Divisão de uma grande lista em listas menores
 
 ## Como usar
 

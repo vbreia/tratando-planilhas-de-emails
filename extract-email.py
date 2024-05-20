@@ -10,5 +10,5 @@ def process_emails(input_file, output_file):
 
     with open(output_file, 'w') as f:
         f.write(emails_formatted)
-
+print(f'Todos os e-mails do arquivo foram obtidos\nArquivo emails_formated.txt criado na pasta /datalake.')
 process_emails('emails.txt', './datalake/emails_processed.txt')

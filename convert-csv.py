@@ -9,5 +9,5 @@ def convert_to_csv(input_file, output_file):
         writer.writerow(['Email'])
         for email in emails:
             writer.writerow([email.strip()])
-
-convert_to_csv('./datalake/emails_processed.txt', './datalake/emails.csv')
+    print('Arquivo emails.csv criado na pasta /datalake.')
+convert_to_csv('./datalake/unique_emails.txt', './datalake/emails.csv')
